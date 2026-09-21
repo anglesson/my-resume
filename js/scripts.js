@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_copy_email: "Copiar E-mail",
 
       // Footer
-      footer_location: "Brasília - DF, Brasil • Atendimento Global",
+      footer_location: "Recife - PE, Brasil • Atendimento Global",
       footer_status: "Disponível para contratos PJ de desenvolvimento e consultoria estratégica",
       footer_rights: "© 2026 Anglesson Araújo. Todos os direitos reservados.",
 
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_copy_email: "Copy Email",
 
       // Footer
-      footer_location: "Brasília, Brazil • Global Delivery",
+      footer_location: "Recife, Brazil • Global Delivery",
       footer_status: "Available for technical consulting and corporate engineering contracts",
       footer_rights: "© 2026 Anglesson Araújo. All rights reserved.",
 
