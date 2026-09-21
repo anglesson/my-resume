@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_rights: "© 2026 Anglesson Araújo. Todos os direitos reservados.",
 
       // Toasts
-      toast_copied: "E-mail copiado para a área de transferência: anglesson@outlook.com",
+      toast_copied: "E-mail copiado para a área de transferência: contato@anglesson.com.br",
       toast_lang: "Idioma alterado para Português [PT-BR]"
     },
 
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_rights: "© 2026 Anglesson Araújo. All rights reserved.",
 
       // Toasts
-      toast_copied: "Email copied to clipboard: anglesson@outlook.com",
+      toast_copied: "Email copied to clipboard: contato@anglesson.com.br",
       toast_lang: "Language changed to English [EN]"
     }
   };
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- CLIPBOARD COPY HELPER ---
   window.copyEmailToClipboard = () => {
-    const email = 'anglesson@outlook.com';
+    const email = 'contato@anglesson.com.br';
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(email).then(() => {
         showToast(translations[currentLang].toast_copied);
