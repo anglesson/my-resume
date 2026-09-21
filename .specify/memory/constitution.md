@@ -61,7 +61,7 @@ Visual styling MUST adhere to the established Cyber-Tech / Omarchy terminal desi
 ### V. Content Integrity & Verifiable Professional Narrative
 All published career data MUST maintain strict factual accuracy and engineering rigor:
 - Truthful Representation: Career logs, employment dates, roles, degrees (e.g., MBA in Software Architecture), and technical skills MUST be verifiable and accurate.
-- Architectural Clarity: Descriptions of past achievements (e.g., Order to Pay modularization, SIGECO maintenance, Executive BI) MUST articulate domain challenges, architectural methodologies (DDD, TDD, microservices, decoupling), and measurable outcomes.
+- Architectural Clarity: Descriptions of past achievements (e.g., financial core modularization, high-concurrency platform tuning, executive analytics) MUST articulate domain challenges, architectural methodologies (DDD, TDD, microservices, decoupling), and measurable outcomes.
 - Asset Synchronization: External links, downloadable resume PDFs, and contact endpoints MUST remain verified, operational, and in sync with on-page content.
 
 *Rationale*: The portfolio is a direct reflection of engineering reputation and reliability; accuracy and clear architectural storytelling are paramount.
