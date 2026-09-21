@@ -10,19 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       nav_about: "~/about",
+      nav_services: "~/services",
       nav_projects: "~/projects",
       nav_experience: "~/experience",
       nav_skills: "~/stack",
       nav_education: "~/education",
       
-      status_badge: "ALL SYSTEMS NOMINAL • SENIOR SOFTWARE ENGINEER",
-      hero_subtitle: "> Senior Software Engineer | Software Architecture & Full Stack",
-      hero_bio: "Senior Software Engineer with a Postgraduate MBA in Software Architecture & Solutions from IGTI. Expert in high-performance backend systems with PHP, JavaScript, React, and Vue.js. Proven track record in large-scale system modularization, Domain-Driven Design (DDD), Test-Driven Development (TDD), and distributed cloud-native architectures.",
+      status_badge: "ALL SYSTEMS NOMINAL • SENIOR SOFTWARE ARCHITECT & ENGINEER",
+      hero_subtitle: "> Senior Software Architect & Consultant | High-Impact Systems & Advisory",
+      hero_bio: "Senior Software Architect & Full-Stack Engineer with a Postgraduate MBA in Software Architecture & Solutions from IGTI. Dedicated to delivering high-value business outcomes: decoupling legacy monoliths into resilient micro-modules (DDD/TDD), optimizing mission-critical backends, and engineering scalable web applications for growth-stage companies.",
+      hero_cta_services: "View Services & Solutions",
+      hero_cta_contact: "Direct Consultation",
       
       stat_years: "+10",
       stat_years_label: "Years in Tech",
-      stat_role: "Senior",
-      stat_role_label: "Software Engineer",
+      stat_role: "Architect",
+      stat_role_label: "Software Solutions",
       stat_edu: "MBA",
       stat_edu_label: "Software Architecture",
       
@@ -30,14 +33,58 @@ document.addEventListener('DOMContentLoaded', () => {
       terminal_title: "bash — anglesson@workstation:~",
       terminal_btn_copy: "1-Click: Copy Email",
       terminal_btn_msg: "Send Message",
+      terminal_btn_services: "Explore Services",
       
       toast_email_copied: "Email [anglesson@outlook.com] copied to clipboard!",
+      toast_inquiry_copied: "Service inquiry template copied to clipboard!",
       toast_lang_changed: "Language changed to English [EN]",
       toast_theme_changed: "Theme switched to",
       
-      projects_tag: "// showcase",
-      projects_title: "Featured Architecture & Projects",
-      projects_desc: "Key engineering accomplishments, distributed modules, and enterprise software systems.",
+      services_tag: "// solutions & capabilities",
+      services_title: "Services & Architecture Solutions",
+      services_desc: "Senior software architecture, system modularization, and full-stack engineering delivered with precision for mission-critical businesses.",
+      services_deliverables_label: "Key Deliverables:",
+      services_fit_label: "Ideal For:",
+      
+      srv1_tag: "// 01_MODULARIZATION",
+      srv1_title: "Architecture & Monolith Modularization",
+      srv1_problem: "Eliminate technical debt and deployment bottlenecks by decoupling tangled monoliths into resilient, testable micro-modules.",
+      srv1_d1: "Domain-Driven Design (DDD) bounded contexts & decoupled domains",
+      srv1_d2: "Standalone modules with clean, documented contract interfaces",
+      srv1_d3: "Automated regression test harness enforcing strict TDD",
+      srv1_fit: "Growing scale-ups, fintechs & mature enterprise codebases",
+      srv1_cta: "Consult Modularization",
+
+      srv2_tag: "// 02_FULLSTACK",
+      srv2_title: "Full-Stack Web Systems & API Delivery",
+      srv2_problem: "Accelerate product delivery with high-performance, maintainable web systems built from day one on solid architectural foundations.",
+      srv2_d1: "High-throughput backend architectures in PHP/Laravel, Node.js",
+      srv2_d2: "Responsive, accessible frontends in modern JavaScript, React, Vue",
+      srv2_d3: "Robust REST / GraphQL APIs with comprehensive contract testing",
+      srv2_fit: "Startups launching MVPs & scale-ups deploying new portals",
+      srv2_cta: "Consult Web Delivery",
+
+      srv3_tag: "// 03_PERFORMANCE",
+      srv3_title: "Performance Diagnostics, DB Tuning & Audits",
+      srv3_problem: "Resolve sluggish response times, database locks, and stability issues during heavy operational traffic spikes.",
+      srv3_d1: "Comprehensive query profiling & MySQL / PostgreSQL index tuning",
+      srv3_d2: "Zero-downtime reliability roadmaps & caching architecture",
+      srv3_d3: "Architectural code quality audit & technical debt assessment",
+      srv3_fit: "High-traffic portals, educational platforms & e-commerce",
+      srv3_cta: "Consult Diagnostics",
+
+      srv4_tag: "// 04_ADVISORY",
+      srv4_title: "Technical Architecture Advisory & Discovery",
+      srv4_problem: "Gain clarity and strategic direction on critical architectural decisions before committing months of engineering effort.",
+      srv4_d1: "System design blueprints & tech stack viability evaluations",
+      srv4_d2: "1-on-1 strategic discovery sessions with founders & tech leads",
+      srv4_d3: "Actionable engineering roadmap & squad architecture mentorship",
+      srv4_fit: "Founders, CTOs & engineering teams scaling their architecture",
+      srv4_cta: "Schedule Discovery",
+      
+      projects_tag: "// delivery_showcase",
+      projects_title: "Proven Architecture & Client Impact",
+      projects_desc: "Empirical proof of delivery: large-scale enterprise modularization, zero-downtime educational platforms, and real-time BI engines.",
       
       proj1_title: "Order to Pay (OTP) System Modularization",
       proj1_desc: "Architected the decoupling and modularization of the core Order to Pay platform into three decoupled micro-modules: OTP, Contract, and Gran Pro, enforcing Domain-Driven Design (DDD) and Test-Driven Development (TDD).",
@@ -49,8 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
       proj3_desc: "Engineered real-time management dashboards in PHP/Laravel integrated with Movidesk API, enabling data-driven corporate decision-making and automated educational portal workflows.",
       
       exp_tag: "// career_log",
-      exp_title: "Work Experience",
-      exp_desc: "Track record in software engineering, system modularization, and corporate IT.",
+      exp_title: "Engineering Track Record & Experience",
+      exp_desc: "A decade of enterprise software engineering and architecture leadership backing every service offered.",
       
       exp_gran_period: "AUG 2022 — PRESENT",
       exp_gran_role: "Senior Software Engineer",
@@ -122,19 +169,22 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     pt: {
       nav_about: "~/sobre",
+      nav_services: "~/servicos",
       nav_projects: "~/projetos",
       nav_experience: "~/experiencia",
       nav_skills: "~/stack",
       nav_education: "~/formacao",
       
-      status_badge: "TODOS OS SISTEMAS OPERACIONAIS • ENGENHEIRO DE SOFTWARE SÊNIOR",
-      hero_subtitle: "> Engenheiro de Software Sênior | Arquitetura de Software & Full Stack",
-      hero_bio: "Engenheiro de Software Sênior com Pós-graduação (MBA) em Arquitetura de Software e Soluções pelo IGTI. Especialista em sistemas de alta performance com PHP, JavaScript, React e Vue.js. Histórico comprovado em modularização de sistemas em larga escala, Domain-Driven Design (DDD), Test-Driven Development (TDD) e arquiteturas escaláveis.",
+      status_badge: "TODOS OS SISTEMAS OPERACIONAIS • ARQUITETO & ENGENHEIRO DE SOFTWARE SÊNIOR",
+      hero_subtitle: "> Arquiteto de Software & Consultor Sênior | Sistemas de Alto Impacto & Consultoria",
+      hero_bio: "Arquiteto e Engenheiro de Software Sênior com MBA em Arquitetura de Software e Soluções pelo IGTI. Focado em gerar resultados de alto valor para negócios: desacoplamento de monólitos legados em micro-módulos resilientes (DDD/TDD), APIs robustas e desenvolvimento web full-stack de alto desempenho para empresas em escala.",
+      hero_cta_services: "Ver Serviços e Soluções",
+      hero_cta_contact: "Falar Diretamente",
       
       stat_years: "+10",
       stat_years_label: "Anos em Tecnologia",
-      stat_role: "Sênior",
-      stat_role_label: "Software Engineer",
+      stat_role: "Arquiteto",
+      stat_role_label: "Soluções de Software",
       stat_edu: "MBA",
       stat_edu_label: "Arquitetura de Software",
       
@@ -142,14 +192,58 @@ document.addEventListener('DOMContentLoaded', () => {
       terminal_title: "bash — anglesson@workstation:~",
       terminal_btn_copy: "1-Clique: Copiar Email",
       terminal_btn_msg: "Enviar Mensagem",
+      terminal_btn_services: "Ver Serviços",
       
       toast_email_copied: "Email [anglesson@outlook.com] copiado para a área de transferência!",
+      toast_inquiry_copied: "Modelo de contato do serviço copiado para a área de transferência!",
       toast_lang_changed: "Idioma alterado para Português [PT-BR]",
       toast_theme_changed: "Tema alterado para",
       
-      projects_tag: "// showcase",
-      projects_title: "Projetos & Arquitetura em Destaque",
-      projects_desc: "Principais realizações de engenharia, módulos distribuídos e plataformas corporativas.",
+      services_tag: "// solucoes & servicos",
+      services_title: "Serviços & Soluções em Arquitetura",
+      services_desc: "Arquitetura de software sênior, modularização de sistemas e engenharia full-stack entregues com precisão para negócios críticos.",
+      services_deliverables_label: "Principais Entregas:",
+      services_fit_label: "Ideal Para:",
+      
+      srv1_tag: "// 01_MODULARIZACAO",
+      srv1_title: "Arquitetura & Modularização de Monólitos",
+      srv1_problem: "Elimine gargalos de deploy e débito técnico desacoplando monólitos complexos em micro-módulos independentes e testáveis.",
+      srv1_d1: "Modelagem de domínios e contextos delimitados (DDD)",
+      srv1_d2: "Módulos autônomos com interfaces de contrato limpas e documentadas",
+      srv1_d3: "Bateria de testes automatizados com cobertura rigorosa em TDD",
+      srv1_fit: "Scale-ups em expansão, fintechs e bases de código legadas",
+      srv1_cta: "Solicitar Diagnóstico",
+
+      srv2_tag: "// 02_FULLSTACK",
+      srv2_title: "Desenvolvimento Web Full-Stack & APIs",
+      srv2_problem: "Acelere a entrega de produtos com sistemas web de alta performance e manutenibilidade construídos sobre bases arquiteturais sólidas.",
+      srv2_d1: "Backends de alta vazão em PHP/Laravel, Node.js e ecossistemas modernos",
+      srv2_d2: "Frontends responsivos e acessíveis em JavaScript moderno, React e Vue",
+      srv2_d3: "APIs REST / GraphQL robustas com validação rigorosa de contratos",
+      srv2_fit: "Startups lançando MVPs e empresas criando novos portais",
+      srv2_cta: "Contratar Desenvolvimento",
+
+      srv3_tag: "// 03_PERFORMANCE",
+      srv3_title: "Diagnóstico de Performance, Banco de Dados & Auditoria",
+      srv3_problem: "Resolva lentidão em consultas, travamentos de banco de dados e instabilidades durante picos operacionais de tráfego.",
+      srv3_d1: "Profiling aprofundado de consultas e indexação MySQL / PostgreSQL",
+      srv3_d2: "Estratégia de caching e planos de estabilidade para zero-downtime",
+      srv3_d3: "Auditoria de qualidade arquitetural de código e mapeamento de débitos",
+      srv3_fit: "Plataformas educacionais, portais de alto tráfego e e-commerces",
+      srv3_cta: "Solicitar Auditoria",
+
+      srv4_tag: "// 04_CONSULTORIA",
+      srv4_title: "Consultoria Arquitetural & Sessão de Descoberta",
+      srv4_problem: "Obtenha clareza e direção estratégica em decisões técnicas críticas antes de comprometer meses de desenvolvimento.",
+      srv4_d1: "Blueprints de design de sistemas e validação de viabilidade de stack",
+      srv4_d2: "Sessões estratégicas 1-a-1 com fundadores, CTOs e tech leads",
+      srv4_d3: "Roadmap de engenharia acionável e mentoria arquitetural de squads",
+      srv4_fit: "Fundadores, CTOs e times de engenharia escalando arquitetura",
+      srv4_cta: "Agendar Sessão Estratégica",
+      
+      projects_tag: "// entregas_em_producao",
+      projects_title: "Arquitetura Comprovada & Impacto em Clientes",
+      projects_desc: "Histórico empírico de entrega: modularização corporativa em larga escala, plataformas educacionais de alta disponibilidade e dashboards de BI em tempo real.",
       
       proj1_title: "Modularização do Sistema Order to Pay (OTP)",
       proj1_desc: "Arquitetura e desacoplamento do sistema Order to Pay em três módulos independentes: OTP, Contract e Gran Pro, aplicando Domain-Driven Design (DDD) e Test-Driven Development (TDD).",
@@ -160,9 +254,9 @@ document.addEventListener('DOMContentLoaded', () => {
       proj3_title: "Painel de Gestão BI & Integrações com APIs",
       proj3_desc: "Desenvolvimento de dashboards de gestão em tempo real em PHP/Laravel integrados à API Movidesk, apoiando decisões estratégicas da liderança e automatizando fluxos educacionais.",
       
-      exp_tag: "// career_log",
-      exp_title: "Experiência Profissional",
-      exp_desc: "Histórico de atuação em engenharia de software, modularização de sistemas e TI corporativa.",
+      exp_tag: "// historico_profissional",
+      exp_title: "Trajetória em Engenharia & Experiência",
+      exp_desc: "Uma década de engenharia de software corporativa e liderança arquitetural fundamentando cada serviço oferecido.",
       
       exp_gran_period: "AGO 2022 — PRESENTE",
       exp_gran_role: "Engenheiro de Software Sênior",
@@ -263,11 +357,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const terminalAvail = document.getElementById('terminal-json-avail');
     if (terminalRole && terminalAvail) {
       if (lang === 'pt') {
-        terminalRole.textContent = '"Engenheiro de Software Sênior"';
-        terminalAvail.textContent = '"Aberto para projetos de engenharia e arquitetura de software"';
+        terminalRole.textContent = '"Arquiteto de Software & Consultor Sênior"';
+        terminalAvail.textContent = '"Disponível para contratos estratégicos, modularização e consultoria"';
       } else {
-        terminalRole.textContent = '"Senior Software Engineer"';
-        terminalAvail.textContent = '"Open for software architecture & senior engineering opportunities"';
+        terminalRole.textContent = '"Senior Software Architect & Solutions Consultant"';
+        terminalAvail.textContent = '"Available for high-impact contracts, modularization & architecture consulting"';
       }
     }
   }
@@ -388,6 +482,21 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.removeChild(input);
       showToast(msg);
     });
+  };
+
+  // --- SERVICE INQUIRY TEMPLATE COPY ---
+  window.copyServiceInquiry = function(serviceTitle) {
+    const title = serviceTitle || (currentLang === 'pt' ? 'Soluções em Arquitetura' : 'Architecture Solutions');
+    let template = '';
+    if (currentLang === 'pt') {
+      template = `Olá Anglesson,\n\nGostaria de solicitar um diagnóstico sobre o serviço: ${title}.\n\nEmpresa / Projeto:\nDesafio atual / Escopo:\nPrazo estimado:\n\nAtenciosamente,`;
+    } else {
+      template = `Hi Anglesson,\n\nI would like to inquire about your service: ${title}.\n\nCompany / Project:\nCurrent challenge / Scope:\nEstimated timeline:\n\nBest regards,`;
+    }
+    const successMsg = translations[currentLang] && translations[currentLang].toast_inquiry_copied
+      ? translations[currentLang].toast_inquiry_copied
+      : (currentLang === 'pt' ? 'Modelo de contato copiado!' : 'Inquiry template copied!');
+    window.copyToClipboard(template, successMsg);
   };
 
   // --- MOBILE NAV TOGGLE ---

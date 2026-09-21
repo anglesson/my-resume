@@ -32,6 +32,7 @@
             <nav>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a class="nav-link active" href="#about" data-i18n="nav_about">~/about</a></li>
+                    <li><a class="nav-link" href="#services" data-i18n="nav_services">~/services</a></li>
                     <li><a class="nav-link" href="#projects" data-i18n="nav_projects">~/projects</a></li>
                     <li><a class="nav-link" href="#experience" data-i18n="nav_experience">~/experience</a></li>
                     <li><a class="nav-link" href="#skills" data-i18n="nav_skills">~/stack</a></li>
@@ -90,7 +91,7 @@
                 <div class="hero-content">
                     <div class="badge">
                         <span class="status-indicator"></span>
-                        <span data-i18n="status_badge">ALL SYSTEMS NOMINAL &bull; SENIOR SOFTWARE ENGINEER</span>
+                        <span data-i18n="status_badge">ALL SYSTEMS NOMINAL &bull; SENIOR SOFTWARE ARCHITECT &amp; ENGINEER</span>
                     </div>
 
                     <h1 class="hero-title">
@@ -98,11 +99,11 @@
                     </h1>
 
                     <div class="hero-subtitle" data-i18n="hero_subtitle">
-                        &gt; Senior Software Engineer | Software Architecture &amp; Full Stack
+                        &gt; Senior Software Architect &amp; Consultant | High-Impact Systems &amp; Advisory
                     </div>
 
                     <p class="hero-bio" data-i18n="hero_bio">
-                        Senior Software Engineer with a Postgraduate MBA in Software Architecture &amp; Solutions from IGTI. Expert in high-performance backend systems with PHP, JavaScript, React, and Vue.js. Proven track record in large-scale system modularization, Domain-Driven Design (DDD), Test-Driven Development (TDD), and distributed cloud-native architectures.
+                        Senior Software Architect &amp; Full-Stack Engineer with a Postgraduate MBA in Software Architecture &amp; Solutions from IGTI. Dedicated to delivering high-value business outcomes: decoupling legacy monoliths into resilient micro-modules (DDD/TDD), optimizing mission-critical backends, and engineering scalable web applications for growth-stage companies.
                     </p>
 
                     <div class="hero-stats">
@@ -111,8 +112,8 @@
                             <span class="stat-label" data-i18n="stat_years_label">Years in Tech</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-i18n="stat_role">Senior</span>
-                            <span class="stat-label" data-i18n="stat_role_label">Software Engineer</span>
+                            <span class="stat-number" data-i18n="stat_role">Architect</span>
+                            <span class="stat-label" data-i18n="stat_role_label">Software Solutions</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-i18n="stat_edu">MBA</span>
@@ -121,13 +122,13 @@
                     </div>
 
                     <div class="hero-actions">
-                        <a href="https://www.linkedin.com/in/anglesson/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                        <a href="#services" class="btn btn-primary">
+                            <i class="fas fa-cubes"></i> <span data-i18n="hero_cta_services">View Services &amp; Solutions</span>
                         </a>
-                        <a href="https://github.com/anglesson" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                            <i class="fab fa-github"></i> GitHub
+                        <a href="mailto:anglesson@outlook.com?subject=%5BProject%20Inquiry%5D%20Architecture%20%26%20Consulting%20%E2%80%94%20anglesson.dev" class="btn btn-outline" aria-label="Direct consultation request via email">
+                            <i class="fas fa-paper-plane"></i> <span data-i18n="hero_cta_contact">Direct Consultation</span>
                         </a>
-                        <button onclick="copyToClipboard('anglesson@outlook.com')" class="btn btn-outline">
+                        <button onclick="copyToClipboard('anglesson@outlook.com')" class="btn btn-outline" aria-label="Copy email address to clipboard">
                             <i class="fas fa-copy"></i> <span data-i18n="btn_copy_email">Copy E-mail</span>
                         </button>
                     </div>
@@ -163,18 +164,21 @@
                     <div class="terminal-out">
                         {<br/>
                         &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"engineer"</span>: <span style="color: var(--accent-green);">"Anglesson Araújo"</span>,<br/>
-                        &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"role"</span>: <span id="terminal-json-role" style="color: var(--accent-green);">"Senior Software Engineer"</span>,<br/>
+                        &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"role"</span>: <span id="terminal-json-role" style="color: var(--accent-green);">"Senior Software Architect &amp; Solutions Consultant"</span>,<br/>
                         &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"core_stack"</span>: [<span style="color: var(--accent-orange);">"PHP"</span>, <span style="color: var(--accent-orange);">"JavaScript"</span>, <span style="color: var(--accent-orange);">"React"</span>, <span style="color: var(--accent-orange);">"Vue.js"</span>, <span style="color: var(--accent-orange);">"Docker"</span>, <span style="color: var(--accent-orange);">"DDD/TDD"</span>],<br/>
                         &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"education"</span>: <span style="color: var(--accent-primary);">"MBA in Software Architecture & Solutions (IGTI)"</span>,<br/>
-                        &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"status"</span>: <span id="terminal-json-avail" style="color: var(--accent-green);">"Open for software architecture & senior engineering opportunities"</span>,<br/>
+                        &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"status"</span>: <span id="terminal-json-avail" style="color: var(--accent-green);">"Available for high-impact contracts, modularization &amp; architecture consulting"</span>,<br/>
                         &nbsp;&nbsp;<span style="color: var(--accent-cyan);">"email"</span>: <span style="color: var(--accent-primary);">"anglesson@outlook.com"</span><br/>
                         }
                     </div>
                     <div class="terminal-action-bar">
-                        <button onclick="copyToClipboard('anglesson@outlook.com')" class="btn btn-outline btn-sm">
+                        <a href="#services" class="btn btn-outline btn-sm">
+                            <i class="fas fa-cubes"></i> <span data-i18n="terminal_btn_services">Explore Services</span>
+                        </a>
+                        <button onclick="copyToClipboard('anglesson@outlook.com')" class="btn btn-outline btn-sm" aria-label="Copy email address to clipboard">
                             <i class="fas fa-terminal"></i> <span data-i18n="terminal_btn_copy">1-Click: Copy Email</span>
                         </button>
-                        <a href="mailto:anglesson@outlook.com" class="btn btn-outline btn-sm">
+                        <a href="mailto:anglesson@outlook.com" class="btn btn-outline btn-sm" aria-label="Send direct message via email">
                             <i class="fas fa-envelope"></i> <span data-i18n="terminal_btn_msg">Send Message</span>
                         </a>
                     </div>
@@ -182,12 +186,175 @@
             </div>
         </section>
 
+        <!-- Services & Solutions Section -->
+        <section id="services" class="resume-section services-section">
+            <div class="section-header">
+                <div class="section-tag" data-i18n="services_tag">// solutions &amp; capabilities</div>
+                <h2 class="section-title" data-i18n="services_title">Services &amp; Architecture Solutions</h2>
+                <p class="section-desc" data-i18n="services_desc">Senior software architecture, system modularization, and full-stack engineering delivered with precision for mission-critical businesses.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Architecture & Monolith Modularization -->
+                <article class="glow-card service-card" data-service-id="srv-modularization">
+                    <div class="service-card-header">
+                        <span class="service-badge" data-i18n="srv1_tag">// 01_MODULARIZATION</span>
+                        <i class="fas fa-cubes service-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="srv1_title">Architecture &amp; Monolith Modularization</h3>
+                    <p class="service-problem" data-i18n="srv1_problem">
+                        Eliminate technical debt and deployment bottlenecks by decoupling tangled monoliths into resilient, testable micro-modules.
+                    </p>
+                    <div class="service-deliverables">
+                        <div class="deliverables-heading" data-i18n="services_deliverables_label">Key Deliverables:</div>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv1_d1">Domain-Driven Design (DDD) bounded contexts &amp; decoupled domains</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv1_d2">Standalone modules with clean, documented contract interfaces</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv1_d3">Automated regression test harness enforcing strict TDD</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services_fit_label">Ideal For:</span>
+                        <span class="fit-value" data-i18n="srv1_fit">Growing scale-ups, fintechs &amp; mature enterprise codebases</span>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="mailto:anglesson@outlook.com?subject=%5BService%20Inquiry%5D%20Architecture%20%26%20Monolith%20Modularization%20%E2%80%94%20anglesson.dev&amp;body=Hi%20Anglesson%2C%0A%0AI%20would%20like%20to%20inquire%20about%20your%20service%3A%20Architecture%20%26%20Monolith%20Modularization.%0A%0ACompany%20%2F%20Project%3A%0ACurrent%20challenge%20%2F%20Scope%3A%0AEstimated%20timeline%3A%0A%0ABest%20regards%2C"
+                           class="btn-service-cta"
+                           aria-label="Inquire about Architecture &amp; Monolith Modularization service">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <span data-i18n="srv1_cta">Consult Modularization</span>
+                        </a>
+                        <button onclick="copyServiceInquiry('Architecture &amp; Monolith Modularization')"
+                                class="btn-service-copy"
+                                title="Copy inquiry template to clipboard"
+                                aria-label="Copy inquiry template for Architecture &amp; Monolith Modularization to clipboard">
+                            <i class="fas fa-copy" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 2: Full-Stack Web Systems & API Delivery -->
+                <article class="glow-card service-card" data-service-id="srv-fullstack">
+                    <div class="service-card-header">
+                        <span class="service-badge" data-i18n="srv2_tag">// 02_FULLSTACK</span>
+                        <i class="fas fa-network-wired service-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="srv2_title">Full-Stack Web Systems &amp; API Delivery</h3>
+                    <p class="service-problem" data-i18n="srv2_problem">
+                        Accelerate product delivery with high-performance, maintainable web systems built from day one on solid architectural foundations.
+                    </p>
+                    <div class="service-deliverables">
+                        <div class="deliverables-heading" data-i18n="services_deliverables_label">Key Deliverables:</div>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv2_d1">High-throughput backend architectures in PHP/Laravel, Node.js</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv2_d2">Responsive, accessible frontends in modern JavaScript, React, Vue</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv2_d3">Robust REST / GraphQL APIs with comprehensive contract testing</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services_fit_label">Ideal For:</span>
+                        <span class="fit-value" data-i18n="srv2_fit">Startups launching MVPs &amp; scale-ups deploying new portals</span>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="mailto:anglesson@outlook.com?subject=%5BService%20Inquiry%5D%20Full-Stack%20Web%20Systems%20%26%20API%20Delivery%20%E2%80%94%20anglesson.dev&amp;body=Hi%20Anglesson%2C%0A%0AI%20would%20like%20to%20inquire%20about%20your%20service%3A%20Full-Stack%20Web%20Systems%20%26%20API%20Delivery.%0A%0ACompany%20%2F%20Project%3A%0ACurrent%20challenge%20%2F%20Scope%3A%0AEstimated%20timeline%3A%0A%0ABest%20regards%2C"
+                           class="btn-service-cta"
+                           aria-label="Inquire about Full-Stack Web Systems &amp; API Delivery service">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <span data-i18n="srv2_cta">Consult Web Delivery</span>
+                        </a>
+                        <button onclick="copyServiceInquiry('Full-Stack Web Systems &amp; API Delivery')"
+                                class="btn-service-copy"
+                                title="Copy inquiry template to clipboard"
+                                aria-label="Copy inquiry template for Full-Stack Web Systems &amp; API Delivery to clipboard">
+                            <i class="fas fa-copy" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 3: Performance Diagnostics, DB Tuning & Audits -->
+                <article class="glow-card service-card" data-service-id="srv-performance">
+                    <div class="service-card-header">
+                        <span class="service-badge" data-i18n="srv3_tag">// 03_PERFORMANCE</span>
+                        <i class="fas fa-tachometer-alt service-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="srv3_title">Performance Diagnostics, DB Tuning &amp; Audits</h3>
+                    <p class="service-problem" data-i18n="srv3_problem">
+                        Resolve sluggish response times, database locks, and stability issues during heavy operational traffic spikes.
+                    </p>
+                    <div class="service-deliverables">
+                        <div class="deliverables-heading" data-i18n="services_deliverables_label">Key Deliverables:</div>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv3_d1">Comprehensive query profiling &amp; MySQL / PostgreSQL index tuning</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv3_d2">Zero-downtime reliability roadmaps &amp; caching architecture</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv3_d3">Architectural code quality audit &amp; technical debt assessment</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services_fit_label">Ideal For:</span>
+                        <span class="fit-value" data-i18n="srv3_fit">High-traffic portals, educational platforms &amp; e-commerce</span>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="mailto:anglesson@outlook.com?subject=%5BService%20Inquiry%5D%20Performance%20Diagnostics%2C%20DB%20Tuning%20%26%20Audits%20%E2%80%94%20anglesson.dev&amp;body=Hi%20Anglesson%2C%0A%0AI%20would%20like%20to%20inquire%20about%20your%20service%3A%20Performance%20Diagnostics%2C%20DB%20Tuning%20%26%20Audits.%0A%0ACompany%20%2F%20Project%3A%0ACurrent%20challenge%20%2F%20Scope%3A%0AEstimated%20timeline%3A%0A%0ABest%20regards%2C"
+                           class="btn-service-cta"
+                           aria-label="Inquire about Performance Diagnostics, DB Tuning &amp; Audits service">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <span data-i18n="srv3_cta">Consult Diagnostics</span>
+                        </a>
+                        <button onclick="copyServiceInquiry('Performance Diagnostics, DB Tuning &amp; Audits')"
+                                class="btn-service-copy"
+                                title="Copy inquiry template to clipboard"
+                                aria-label="Copy inquiry template for Performance Diagnostics, DB Tuning &amp; Audits to clipboard">
+                            <i class="fas fa-copy" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Service 4: Technical Architecture Advisory & Discovery -->
+                <article class="glow-card service-card" data-service-id="srv-advisory">
+                    <div class="service-card-header">
+                        <span class="service-badge" data-i18n="srv4_tag">// 04_ADVISORY</span>
+                        <i class="fas fa-compass service-icon" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="srv4_title">Technical Architecture Advisory &amp; Discovery</h3>
+                    <p class="service-problem" data-i18n="srv4_problem">
+                        Gain clarity and strategic direction on critical architectural decisions before committing months of engineering effort.
+                    </p>
+                    <div class="service-deliverables">
+                        <div class="deliverables-heading" data-i18n="services_deliverables_label">Key Deliverables:</div>
+                        <ul>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv4_d1">System design blueprints &amp; tech stack viability evaluations</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv4_d2">1-on-1 strategic discovery sessions with founders &amp; tech leads</span></li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span data-i18n="srv4_d3">Actionable engineering roadmap &amp; squad architecture mentorship</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-fit">
+                        <span class="fit-label" data-i18n="services_fit_label">Ideal For:</span>
+                        <span class="fit-value" data-i18n="srv4_fit">Founders, CTOs &amp; engineering teams scaling their architecture</span>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="mailto:anglesson@outlook.com?subject=%5BService%20Inquiry%5D%20Technical%20Architecture%20Advisory%20%26%20Discovery%20%E2%80%94%20anglesson.dev&amp;body=Hi%20Anglesson%2C%0A%0AI%20would%20like%20to%20inquire%20about%20your%20service%3A%20Technical%20Architecture%20Advisory%20%26%20Discovery.%0A%0ACompany%20%2F%20Project%3A%0ACurrent%20challenge%20%2F%20Scope%3A%0AEstimated%20timeline%3A%0A%0ABest%20regards%2C"
+                           class="btn-service-cta"
+                           aria-label="Inquire about Technical Architecture Advisory &amp; Discovery service">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <span data-i18n="srv4_cta">Schedule Discovery</span>
+                        </a>
+                        <button onclick="copyServiceInquiry('Technical Architecture Advisory &amp; Discovery')"
+                                class="btn-service-copy"
+                                title="Copy inquiry template to clipboard"
+                                aria-label="Copy inquiry template for Technical Architecture Advisory &amp; Discovery to clipboard">
+                            <i class="fas fa-copy" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <!-- Featured Projects Section -->
         <section id="projects">
             <div class="section-header">
-                <div class="section-tag" data-i18n="projects_tag">// showcase</div>
-                <h2 class="section-title" data-i18n="projects_title">Featured Architecture &amp; Projects</h2>
-                <p class="section-desc" data-i18n="projects_desc">Key engineering accomplishments, distributed modules, and enterprise software systems.</p>
+                <div class="section-tag" data-i18n="projects_tag">// delivery_showcase</div>
+                <h2 class="section-title" data-i18n="projects_title">Proven Architecture &amp; Client Impact</h2>
+                <p class="section-desc" data-i18n="projects_desc">Empirical proof of delivery: large-scale enterprise modularization, zero-downtime educational platforms, and real-time BI engines.</p>
             </div>
 
             <div class="cards-grid">
@@ -205,10 +372,10 @@
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">PHP</span>
-                        <span class="project-tag">JavaScript</span>
                         <span class="project-tag">DDD</span>
                         <span class="project-tag">TDD</span>
-                        <span class="project-tag">Microservices</span>
+                        <span class="project-tag">Micro-Modules</span>
+                        <span class="project-tag">Fintech Payments</span>
                     </div>
                 </div>
 
@@ -226,9 +393,10 @@
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">PHP Zend</span>
-                        <span class="project-tag">AngularJS</span>
                         <span class="project-tag">MySQL</span>
                         <span class="project-tag">Performance Tuning</span>
+                        <span class="project-tag">Zero-Downtime</span>
+                        <span class="project-tag">High-Traffic</span>
                     </div>
                 </div>
 
@@ -247,8 +415,9 @@
                     <div class="project-tags">
                         <span class="project-tag">Laravel</span>
                         <span class="project-tag">REST API</span>
-                        <span class="project-tag">Business Intelligence</span>
+                        <span class="project-tag">Executive BI</span>
                         <span class="project-tag">SQL Server</span>
+                        <span class="project-tag">Workflow Automation</span>
                     </div>
                 </div>
             </div>
@@ -258,8 +427,8 @@
         <section id="experience">
             <div class="section-header">
                 <div class="section-tag" data-i18n="exp_tag">// career_log</div>
-                <h2 class="section-title" data-i18n="exp_title">Work Experience</h2>
-                <p class="section-desc" data-i18n="exp_desc">Track record in software engineering, system modularization, and corporate IT.</p>
+                <h2 class="section-title" data-i18n="exp_title">Engineering Track Record &amp; Experience</h2>
+                <p class="section-desc" data-i18n="exp_desc">A decade of enterprise software engineering and architecture leadership backing every service offered.</p>
             </div>
 
             <div class="timeline">

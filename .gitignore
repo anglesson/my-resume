@@ -1,0 +1,22 @@
+# OS metadata & temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# IDE & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs & Environment
+*.log
+.env
+.env.local
+.env.*.local
+
+# Dependency & build directories (if ever used)
+node_modules/
+dist/
+build/
